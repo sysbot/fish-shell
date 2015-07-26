@@ -28,11 +28,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #include <wchar.h>
 #include <string.h>
 #include <unistd.h>
-#include <errno.h>
 #include <unistd.h>
-#include <termios.h>
 #include <fcntl.h>
-#include <sys/param.h>
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <sys/types.h>
@@ -42,27 +39,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #include <getopt.h>
 #endif
 
-#include <locale.h>
-#include <signal.h>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "common.h"
 #include "reader.h"
 #include "builtin.h"
-#include "function.h"
-#include "complete.h"
-#include "wutil.h"
-#include "env.h"
-#include "sanity.h"
-#include "proc.h"
 #include "parser.h"
 #include "expand.h"
 #include "intern.h"
-#include "exec.h"
-#include "event.h"
-#include "output.h"
 #include "history.h"
 #include "path.h"
 #include "input.h"

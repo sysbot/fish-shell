@@ -6,20 +6,11 @@
 
 #include "config.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <assert.h>
-#include <string.h>
-#include <errno.h>
-#include <termios.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 
 #ifdef HAVE_SYS_IOCTL_H
 #include <sys/ioctl.h>
 #endif
 
-#include <unistd.h>
 #include <wchar.h>
 
 #if HAVE_NCURSES_H
@@ -36,31 +27,18 @@
 #include <ncurses/term.h>
 #endif
 
-#include <signal.h>
-#include <dirent.h>
 #include <wctype.h>
 
 
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
 #include "reader.h"
-#include "proc.h"
-#include "common.h"
-#include "sanity.h"
-#include "input_common.h"
 #include "input.h"
 #include "parser.h"
-#include "env.h"
-#include "expand.h"
-#include "event.h"
 #include "signal.h"
 
 #include "output.h"
-#include "intern.h"
-#include <vector>
 #include <algorithm>
 
 #define DEFAULT_TERM L"ansi"

@@ -23,6 +23,7 @@ parts of fish.
 #include <string.h>
 #include <stdio.h>
 #include <dirent.h>
+#include <math.h>
 #include <sys/types.h>
 
 #ifdef HAVE_SYS_IOCTL_H

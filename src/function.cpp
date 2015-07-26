@@ -9,33 +9,16 @@
 
 #include "config.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include <wchar.h>
-#include <unistd.h>
-#include <termios.h>
-#include <signal.h>
 #include <pthread.h>
-#include <errno.h>
-#include <map>
-#include <set>
 
 #include "wutil.h"
-#include "fallback.h"
-#include "util.h"
 
 #include "function.h"
-#include "proc.h"
-#include "parser.h"
-#include "common.h"
 #include "intern.h"
-#include "event.h"
 #include "reader.h"
 #include "parse_util.h"
 #include "parser_keywords.h"
-#include "env.h"
-#include "expand.h"
 
 /**
    Table containing all functions

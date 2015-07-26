@@ -3,39 +3,20 @@
 */
 #include "config.h"
 
-#include <stdlib.h>
 #include <stdio.h>
-#include <sys/stat.h>
 #include <unistd.h>
-#include <errno.h>
 #include <wchar.h>
 #include <wctype.h>
-#include <termios.h>
-#include <signal.h>
-#include <algorithm>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "highlight.h"
-#include "tokenizer.h"
-#include "proc.h"
 #include "parser.h"
 #include "parse_util.h"
-#include "parser_keywords.h"
 #include "builtin.h"
-#include "function.h"
-#include "env.h"
-#include "expand.h"
-#include "sanity.h"
-#include "common.h"
-#include "complete.h"
 #include "output.h"
 #include "wildcard.h"
 #include "path.h"
 #include "history.h"
-#include "parse_tree.h"
 
 #define CURSOR_POSITION_INVALID ((size_t)(-1))
 

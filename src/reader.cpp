@@ -25,7 +25,6 @@ commence.
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <errno.h>
 #include <termios.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -36,8 +35,6 @@ commence.
 
 #include <time.h>
 #include <sys/time.h>
-#include <sys/wait.h>
-#include <sys/poll.h>
 #include <unistd.h>
 #include <wctype.h>
 #include <stack>
@@ -67,41 +64,24 @@ commence.
 
 #include <signal.h>
 #include <fcntl.h>
-#include <dirent.h>
 #include <wchar.h>
 
-#include <assert.h>
 
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "highlight.h"
-#include "reader.h"
-#include "proc.h"
 #include "parser.h"
-#include "complete.h"
 #include "history.h"
-#include "common.h"
 #include "sanity.h"
-#include "env.h"
 #include "exec.h"
 #include "expand.h"
-#include "tokenizer.h"
 #include "kill.h"
-#include "input_common.h"
 #include "input.h"
-#include "function.h"
 #include "output.h"
 #include "signal.h"
-#include "screen.h"
 #include "iothread.h"
 #include "intern.h"
-#include "path.h"
 #include "parse_util.h"
-#include "parser_keywords.h"
-#include "parse_tree.h"
 #include "pager.h"
 
 /**

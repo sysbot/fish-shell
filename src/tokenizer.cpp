@@ -8,20 +8,15 @@ segments.
 
 #include "config.h"
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <wchar.h>
 #include <wctype.h>
-#include <string.h>
-#include <unistd.h>
 #include <fcntl.h>
 
 #include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
 #include "tokenizer.h"
-#include "common.h"
 
 /* Wow what a hack */
 #define TOK_CALL_ERROR(t, e, x) do { (t)->call_error((e), (t)->squash_errors ? L"" : (x)); } while (0)

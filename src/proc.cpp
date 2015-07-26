@@ -11,15 +11,12 @@ Some of the code in this file is based on code from the Glibc manual.
 */
 #include "config.h"
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <sys/wait.h>
 #include <wchar.h>
 #include <string.h>
-#include <errno.h>
 #include <termios.h>
 #include <sys/types.h>
-#include <sys/stat.h>
 #include <algorithm>
 
 #ifdef HAVE_SYS_IOCTL_H
@@ -28,7 +25,6 @@ Some of the code in this file is based on code from the Glibc manual.
 
 #include <unistd.h>
 #include <signal.h>
-#include <dirent.h>
 #include <sys/time.h>
 
 #if HAVE_NCURSES_H
@@ -53,18 +49,12 @@ Some of the code in this file is based on code from the Glibc manual.
 #include <sys/select.h>
 #endif
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "proc.h"
-#include "common.h"
 #include "reader.h"
 #include "sanity.h"
-#include "env.h"
 #include "parser.h"
 #include "signal.h"
-#include "event.h"
 
 #include "output.h"
 

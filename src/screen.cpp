@@ -11,12 +11,9 @@ efficient way for transforming that to the desired screen content.
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <errno.h>
-#include <termios.h>
 #include <sys/types.h>
 
 #include <unistd.h>
-#include <wctype.h>
 
 #if HAVE_NCURSES_H
 #include <ncurses.h>
@@ -35,18 +32,9 @@ efficient way for transforming that to the desired screen content.
 #include <wchar.h>
 #include <time.h>
 
-#include <assert.h>
-#include <vector>
 
 
-#include "fallback.h"
-#include "common.h"
-#include "util.h"
-#include "wutil.h"
 #include "output.h"
-#include "highlight.h"
-#include "screen.h"
-#include "env.h"
 #include "pager.h"
 
 /** The number of characters to indent new blocks */

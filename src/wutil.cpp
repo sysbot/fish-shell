@@ -9,17 +9,12 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <errno.h>
 #include <fcntl.h>
 #include <wchar.h>
-#include <wctype.h>
 #include <string.h>
 #include <dirent.h>
-#include <stdarg.h>
-#include <limits.h>
 #include <libgen.h>
 #include <pthread.h>
-#include <string>
 #include <map>
 
 
@@ -28,9 +23,7 @@
 #endif
 
 #include "fallback.h"
-#include "util.h"
 
-#include "common.h"
 #include "wutil.h"
 
 typedef std::string cstring;

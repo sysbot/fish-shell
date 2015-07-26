@@ -6,45 +6,20 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
-#include <string.h>
 #include <wchar.h>
 #include <wctype.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <dirent.h>
-#include <errno.h>
-#include <termios.h>
-#include <ctype.h>
 #include <pwd.h>
-#include <signal.h>
 #include <wchar.h>
-#include <pthread.h>
 #include <algorithm>
 
-#include "fallback.h"
-#include "util.h"
 
-#include "tokenizer.h"
 #include "wildcard.h"
-#include "proc.h"
 #include "parser.h"
-#include "function.h"
-#include "complete.h"
 #include "builtin.h"
-#include "env.h"
 #include "exec.h"
-#include "expand.h"
-#include "common.h"
-#include "reader.h"
 #include "history.h"
-#include "intern.h"
 #include "parse_util.h"
-#include "parser_keywords.h"
-#include "wutil.h"
 #include "path.h"
-#include "parse_tree.h"
 #include "iothread.h"
 
 /*

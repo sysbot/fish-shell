@@ -62,10 +62,6 @@
 #include <stdio.h>
 #include <wchar.h>
 
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <dirent.h>
 
 
 /* This needs to come after some library #include
@@ -89,7 +85,6 @@
 
 #include "wgetopt.h"
 #include "wutil.h"
-#include "fallback.h"
 
 
 /**

@@ -1,11 +1,7 @@
 #include "config.h"
 
 #include "pager.h"
-#include "highlight.h"
-#include "input_common.h"
 #include "wutil.h"
-#include <vector>
-#include <map>
 
 typedef pager_t::comp_t comp_t;
 typedef std::vector<completion_t> completion_list_t;

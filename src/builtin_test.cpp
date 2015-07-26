@@ -10,8 +10,6 @@ Implemented from scratch (yes, really) by way of IEEE 1003.1 as reference.
 #include "builtin.h"
 #include "wutil.h"
 #include "proc.h"
-#include <sys/stat.h>
-#include <memory>
 
 
 enum

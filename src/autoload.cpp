@@ -6,11 +6,9 @@ The classes responsible for autoloading functions and completions.
 #include "config.h"
 #include "autoload.h"
 #include "wutil.h"
-#include "common.h"
 #include "signal.h"
 #include "env.h"
 #include "exec.h"
-#include <assert.h>
 #include <algorithm>
 
 /* The time before we'll recheck an autoloaded file */

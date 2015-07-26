@@ -24,17 +24,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #include <stdlib.h>
 #include <stdio.h>
 #include <wchar.h>
-#include <vector>
-#include <map>
 #ifdef HAVE_GETOPT_H
 #include <getopt.h>
 #endif
 
 #include "wutil.h"
-#include "common.h"
 #include "output.h"
-#include "screen.h"
-#include "env.h"
 #include "input.h"
 #include "parse_tree.h"
 #include "print_help.h"

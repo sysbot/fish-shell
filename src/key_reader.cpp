@@ -11,12 +11,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <termios.h>
-#include <unistd.h>
-#include <locale.h>
 #include <termcap.h>
 
 #include "common.h"
-#include "fallback.h"
 
 #include "input_common.h"
 

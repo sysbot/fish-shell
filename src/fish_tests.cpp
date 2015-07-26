@@ -10,18 +10,11 @@
 #include <wchar.h>
 #include <string.h>
 #include <unistd.h>
-#include <errno.h>
 #include <unistd.h>
-#include <termios.h>
 #include <sys/types.h>
-#include <sys/stat.h>
 #include <sys/wait.h>
-#include <fcntl.h>
 #include <stdarg.h>
 #include <libgen.h>
-#include <iostream>
-#include <string>
-#include <sstream>
 #include <algorithm>
 #include <iterator>
 
@@ -31,35 +24,18 @@
 
 #include <signal.h>
 
-#include <locale.h>
-#include <dirent.h>
 #include <time.h>
 
 #include "fallback.h"
-#include "util.h"
 
 #include "common.h"
-#include "proc.h"
-#include "reader.h"
 #include "builtin.h"
-#include "function.h"
-#include "autoload.h"
-#include "complete.h"
-#include "wutil.h"
-#include "env.h"
 #include "expand.h"
 #include "parser.h"
-#include "tokenizer.h"
-#include "output.h"
-#include "exec.h"
-#include "event.h"
 #include "path.h"
 #include "history.h"
-#include "highlight.h"
 #include "iothread.h"
-#include "postfork.h"
 #include "signal.h"
-#include "parse_tree.h"
 #include "parse_util.h"
 #include "pager.h"
 #include "input.h"

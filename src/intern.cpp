@@ -6,19 +6,11 @@
 #include "config.h"
 
 
-#include <stdlib.h>
-#include <stdio.h>
 #include <wchar.h>
-#include <unistd.h>
-#include <set>
 #include <algorithm>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "common.h"
-#include "intern.h"
 
 /** Comparison function for intern'd strings */
 class string_table_compare_t

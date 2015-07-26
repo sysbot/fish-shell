@@ -5,18 +5,11 @@
 
 #include <stdlib.h>
 #include <wchar.h>
-#include <string.h>
 #include <stdio.h>
-#include <locale.h>
 #include <unistd.h>
-#include <signal.h>
-#include <assert.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <pthread.h>
 #include <pwd.h>
-#include <set>
-#include <map>
 #include <algorithm>
 
 #if HAVE_NCURSES_H
@@ -37,15 +30,9 @@
 #include <libintl.h>
 #endif
 
-#include <errno.h>
 
 #include "fallback.h"
-#include "util.h"
 
-#include "wutil.h"
-#include "proc.h"
-#include "common.h"
-#include "env.h"
 #include "sanity.h"
 #include "expand.h"
 #include "history.h"
@@ -53,10 +40,8 @@
 #include "parser.h"
 #include "env_universal_common.h"
 #include "input.h"
-#include "event.h"
 #include "path.h"
 
-#include "complete.h"
 #include "fish_version.h"
 
 /** Value denoting a null string */

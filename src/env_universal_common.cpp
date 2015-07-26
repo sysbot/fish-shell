@@ -9,8 +9,6 @@
 
 #include "env_universal_common.h"
 
-#include <fcntl.h>
-#include <sys/un.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/file.h>
@@ -23,13 +21,8 @@
 #endif
 
 #include "fallback.h"
-#include "util.h"
 
-#include "common.h"
-#include "wutil.h"
 #include "utf8.h"
-#include "path.h"
-#include "iothread.h"
 
 #if __APPLE__
 #define FISH_NOTIFYD_AVAILABLE 1

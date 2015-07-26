@@ -12,43 +12,27 @@ parameter expansion.
 #include <wchar.h>
 #include <string.h>
 #include <wctype.h>
-#include <errno.h>
 #include <pwd.h>
 #include <unistd.h>
-#include <limits.h>
-#include <sys/param.h>
 #include <sys/types.h>
 #ifdef HAVE_SYS_SYSCTL_H
 #include <sys/sysctl.h>
 #endif
-#include <termios.h>
 #include <dirent.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <signal.h>
 #include <algorithm>
 
-#include <assert.h>
-#include <vector>
 
 #ifdef SunOS
 #include <procfs.h>
 #endif
 
-#include "fallback.h"
-#include "util.h"
 
-#include "common.h"
 #include "wutil.h"
-#include "env.h"
-#include "proc.h"
 #include "parser.h"
-#include "expand.h"
 #include "wildcard.h"
 #include "exec.h"
-#include "signal.h"
-#include "tokenizer.h"
-#include "complete.h"
 #include "iothread.h"
 
 #include "parse_util.h"

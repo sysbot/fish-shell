@@ -7,32 +7,19 @@ wildcards using **.
 */
 
 #include "config.h"
-#include <algorithm>
 #include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
 #include <wchar.h>
-#include <unistd.h>
 #include <sys/types.h>
-#include <sys/stat.h>
 #include <dirent.h>
-#include <errno.h>
 #include <string.h>
 #include <set>
 
 
 #include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "complete.h"
-#include "common.h"
 #include "wildcard.h"
-#include "complete.h"
 #include "reader.h"
-#include "expand.h"
-#include "exec.h"
-#include <map>
 
 /**
    This flag is set in the flags parameter of wildcard_expand if the

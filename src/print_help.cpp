@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "print_help.h"
 
 #define CMD_LEN 1024
 

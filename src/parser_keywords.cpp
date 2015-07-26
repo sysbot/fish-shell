@@ -6,12 +6,8 @@ Functions having to do with parser keywords, like testing if a function is a blo
 #include "config.h"
 
 
-#include <stdlib.h>
-#include <stdio.h>
 
-#include "fallback.h"
 #include "common.h"
-#include "parser_keywords.h"
 
 bool parser_keywords_skip_arguments(const wcstring &cmd)
 {

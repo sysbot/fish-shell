@@ -6,26 +6,15 @@ Implementation file for the low level input library
 #include "config.h"
 
 
-#include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
-#include <errno.h>
 #include <sys/time.h>
-#include <sys/types.h>
-#include <unistd.h>
 #include <wchar.h>
-#include <stack>
 #include <list>
-#include <queue>
 #ifdef HAVE_SYS_SELECT_H
 #include <sys/select.h>
 #endif
 
-#include "fallback.h"
-#include "util.h"
 
-#include "common.h"
-#include "wutil.h"
 #include "input_common.h"
 #include "env_universal_common.h"
 #include "iothread.h"

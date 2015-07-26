@@ -8,26 +8,10 @@
 
 #include "config.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <wchar.h>
-#include <termios.h>
-#include <unistd.h>
-#include <signal.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <dirent.h>
 #include <algorithm>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "kill.h"
-#include "proc.h"
-#include "sanity.h"
-#include "common.h"
-#include "env.h"
 #include "exec.h"
 #include "path.h"
 

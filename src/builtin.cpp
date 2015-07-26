@@ -23,48 +23,25 @@
 #include <stdio.h>
 #include <wchar.h>
 #include <unistd.h>
-#include <termios.h>
-#include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <dirent.h>
 #include <string.h>
 #include <signal.h>
 #include <wctype.h>
-#include <sys/time.h>
 #include <time.h>
 #include <stack>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
 #include "builtin.h"
-#include "function.h"
-#include "complete.h"
-#include "proc.h"
 #include "parser.h"
-#include "reader.h"
-#include "env.h"
-#include "common.h"
-#include "wgetopt.h"
-#include "sanity.h"
-#include "tokenizer.h"
-#include "wildcard.h"
-#include "input_common.h"
-#include "input.h"
 #include "intern.h"
-#include "event.h"
 #include "signal.h"
 #include "exec.h"
-#include "highlight.h"
-#include "parse_util.h"
 #include "parser_keywords.h"
-#include "expand.h"
 #include "path.h"
 #include "history.h"
-#include "parse_tree.h"
 #include "wcstringutil.h"
 
 /**

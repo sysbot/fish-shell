@@ -6,33 +6,23 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <wchar.h>
-#include <errno.h>
-#include <dirent.h>
 #include <sys/types.h>
-#include <sys/stat.h>
 #include <unistd.h>
 #include <sys/mman.h>
 #include <fcntl.h>
 #include <string.h>
 #include <time.h>
-#include <assert.h>
 
-#include "fallback.h"
-#include "util.h"
 #include "sanity.h"
 #include "tokenizer.h"
 #include "reader.h"
 #include "parse_tree.h"
 
-#include "wutil.h"
 #include "history.h"
-#include "common.h"
-#include "intern.h"
 #include "path.h"
 #include "signal.h"
 #include "autoload.h"
 #include "iothread.h"
-#include <map>
 #include <algorithm>
 
 /*

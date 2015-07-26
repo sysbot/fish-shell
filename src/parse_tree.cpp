@@ -1,11 +1,7 @@
 #include "parse_productions.h"
-#include "tokenizer.h"
 #include "fallback.h"
 #include "wutil.h"
 #include "proc.h"
-#include "expand.h"
-#include <vector>
-#include <algorithm>
 
 using namespace parse_productions;
 

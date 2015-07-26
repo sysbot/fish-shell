@@ -7,24 +7,14 @@ The library for various signal related issues
 #include "config.h"
 
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <sys/types.h>
 #include <signal.h>
-#include <dirent.h>
-#include <unistd.h>
-#include <errno.h>
 
 #ifdef HAVE_SIGINFO_H
 #include <siginfo.h>
 #endif
 
-#include "common.h"
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "signal.h"
 #include "event.h"
 #include "reader.h"
 #include "proc.h"

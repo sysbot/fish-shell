@@ -6,21 +6,13 @@ Utilities for io redirection.
 #include "config.h"
 
 
-#include <stdlib.h>
 #include <stdio.h>
-#include <wchar.h>
-#include <string.h>
-#include <errno.h>
-#include <sys/types.h>
-#include <set>
-#include <algorithm>
 
 #ifdef HAVE_SYS_IOCTL_H
 #include <sys/ioctl.h>
 #endif
 
 #include <unistd.h>
-#include <fcntl.h>
 
 #if HAVE_NCURSES_H
 #include <ncurses.h>
@@ -36,13 +28,9 @@ Utilities for io redirection.
 #include <ncurses/term.h>
 #endif
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
 #include "exec.h"
-#include "common.h"
-#include "io.h"
 
 
 io_data_t::~io_data_t()

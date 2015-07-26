@@ -5,25 +5,13 @@
 */
 #include "config.h"
 
-#include <stdlib.h>
 #include <stdio.h>
-#include <wchar.h>
-#include <unistd.h>
-#include <termios.h>
-#include <signal.h>
-#include <string.h>
 #include <algorithm>
 
-#include "fallback.h"
-#include "util.h"
 
 #include "wutil.h"
-#include "function.h"
 #include "input_common.h"
-#include "proc.h"
 #include "parser.h"
-#include "common.h"
-#include "event.h"
 #include "signal.h"
 
 

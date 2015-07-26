@@ -1,21 +1,11 @@
 #include "config.h"
 
-#include <stdlib.h>
-#include <stdio.h>
 #include <wchar.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <errno.h>
-#include <libgen.h>
 
 #include "fallback.h"
-#include "util.h"
 
-#include "common.h"
 #include "env.h"
 #include "wutil.h"
-#include "path.h"
 #include "expand.h"
 
 /**

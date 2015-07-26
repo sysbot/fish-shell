@@ -4,7 +4,6 @@
   the only change is different `git describe` version.
 */
 
-#include "fish_version.h"
 
 /**
  * Return fish shell version.
